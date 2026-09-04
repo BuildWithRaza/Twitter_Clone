@@ -9,88 +9,407 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-black text-white">
-    <main class="flex">
-        <section class="w-[25%] flex flex-col justify-between h-screen">
-            <div class=" flex flex-col gap-2 py-5">
-                <div class="logo flex justify-end">
-                    <div class="w-[75%] p-3">
+<body class="bg-black text-white ">
+    <main class="2xl:container 2xl:mx-auto flex md:mx-auto">
+        <section class="md:w-[25%] w-[100px] flex flex-col justify-between h-screen pb-2 overflow-y-hidden">
+            <div class=" flex flex-col gap-2 py-5 sticky ">
+                <div class="logo flex justify-center  md:justify-end">
+                    <div class="flex justify-center md:justify-normal w-[100px]  xl:w-[75%] p-3">
                         <img class="invert w-[30px]" src="./Assets/svg/logo.svg" alt="">
                     </div>
                 </div>
-                <div class="sidebar flex flex-col items-end">
-                    <ul class="w-[75%] font-semibold  flex flex-col  text-[20px]">
+                <div class="sidebar flex flex-col  items-end ">
+                    <ul
+                        class="w-[100px] items-center md:items-start xl:w-[75%] font-semibold  flex flex-col  text-[20px]">
 
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/home.svg" alt="">
-                            <a href="/">Home</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <span class="material-symbols-outlined text-[24px]">search</span>
-                            <a href="/">Explore</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/notification.svg" alt="">
-                            <a href="/">Notification</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <span class="material-symbols-outlined text-[24px] ">person_add</span>
-                            <a href="/">Follow</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/chat.svg" alt="">
-                           <a href="/">Chat</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/grok.svg" alt="">
-                           <a href="/">Grok</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <span class="material-symbols-outlined text-[24px] ">bookmark</span>
-                            <a href="/">History</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/premium.svg" alt="">
-                            <a href="/">Premium</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <span class="material-symbols-outlined text-[24px] ">person</span>
-                            <a href="/">Profile</a>
-                        </li>
-                        <li class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit">
-                            <img class="invert w-6" src="./Assets/svg/more.svg" alt="">
-                            <a href="/">More</a>
-                        </li>
+                        <li>
 
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/home.svg" alt="">
+                                <span class="hidden xl:block">Home</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <span class="material-symbols-outlined text-[24px]">search</span>
+                                <span class="hidden xl:block">Explore</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/notification.svg" alt="">
+                                <span class="hidden xl:block">Notification</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <span class="material-symbols-outlined text-[24px] ">person_add</span>
+                                <span class="hidden xl:block">Follow</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/chat.svg" alt="">
+                                <span class="hidden xl:block">Chat</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/grok.svg" alt="">
+                                <span class="hidden xl:block">Grok</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <span class="material-symbols-outlined text-[24px] ">bookmark</span>
+                                <span class="hidden xl:block">History</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/premium.svg" alt="">
+                                <span class="hidden xl:block">Premium</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <span class="material-symbols-outlined text-[24px] ">person</span>
+                                <span class="hidden xl:block">Profile</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a class="flex items-center gap-6 leading-6 p-3 rounded-3xl hover:bg-[#181818] w-fit"
+                                href="/">
+                                <img class="invert w-6" src="./Assets/svg/more.svg" alt="">
+                                <span class="hidden xl:block">More</span>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
-                <div class="postButton flex justify-end w-[70%] mx-auto font-semibold text-[17px]">
-                    <button class="w-[85%] p-3 bg-white text-black rounded-3xl px-8">Post</button>
+                <div class="flex justify-end">
+                    <div
+                        class="postButton flex xl:justify-end w-[100px] justify-start  xl:w-[70%] xl:mx-auto font-semibold text-[17px]">
+                        <a href="/"
+                            class="xl:w-[85%] min-h-12 flex justify-center items-center p-3 bg-white text-black rounded-full  xl:px-8">
+                            <span class="hidden xl:block">Post</span>
+                            <img class="xl:hidden block w-6 min-h-6 rounded-full " src="./Assets/svg/post.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-end w-[75%] items-end ml-auto mr-3">
+            <div class="flex justify-end w-[100%]  xl:w-[75%] items-end xl:ml-auto lg:mr-3">
                 <div
-                    class="shortProfile flex justify-between items-center w-[100%]  hover:bg-[#181818] p-3 rounded-full mb-3">
+                    class="shortProfile flex xl:justify-between xl:items-center w-[100px] xl:w-[100%]  hover:bg-[#181818] xl:p-3 rounded-full mb-3">
                     <div class="flex gap-4">
                         <div class="image">
                             <img class=" w-12 rounded-full" src="./Assets/Images/person.png" alt="">
                         </div>
-                        <div class="">
+                        <div class="hidden xl:block">
                             <h4>Name</h4>
-                            <p class="text-[rgb(101,105,108)]">@UserName</p>
+                            <p class="text-[rgb(101,105,108)] ">@UserName</p>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="hidden xl:block">
                         <img class=" w-7" src="./Assets/svg/more_hor.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="flex w-[75%]">
-            <div class="first w-[60%] border-x-[.2px] border-[rgb(101,105,108)] ">a</div>
-            <div class="second w-[40%]">a</div>
+        <section class="flex w-[75%] ">
+            <div class="first w-[95%]  md:w-[85%] lg:w-[60%]  border-x-[.2px] border-[rgb(101,105,108)] ">
+                <nav class="border-b-[.2px] border-[rgb(101,105,108)] w-[100%] h-[60px] flex items-center">
+                    <ul class="flex w-[90%] h-full items-center">
+                        <li class="w-1/2 h-full  hover:bg-[#181818] relative">
+                            <div class="absolute w-9 h-1 bg-[#599ce9] bottom-0 right-[45%]"></div>
+                            <a class="text-center flex justify-center items-center h-full font-semibold" href="/">For
+                                you</a>
+                        </li>
+                        <li class="w-1/2 h-full text-center hover:bg-[#181818]"><a
+                                class="text-center text-[rgb(101,105,108)] flex justify-center items-center h-full  font-semibold"
+                                href="/">Following</a></li>
+                    </ul>
+                    <div class="manage-timeline w-[10%] h-full hover:bg-[#181818]">
+                        <a class="h-full flex justify-center items-center text-center" href="/"> <span
+                                class="material-symbols-outlined text-[24px] text-[rgb(101,105,108)] ">add</span></a>
+                    </div>
+                </nav>
+
+                <div class="postsection flex p-4 pb-0 gap-3 border-b-[0.2px] border-[rgb(101,105,108)]">
+                    <div class="">
+                        <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                    </div>
+                    <div class="w-full ">
+                        <div class="w-full pb-3 border-b-[0.2px] border-[rgb(101,105,108)] space-y-8">
+                            <input class="bg-black outline-none p-2 w-[90%] text-xl" type="text" name=""
+                                placeholder=" What's Happening? " id="">
+                            <p
+                                class="flex items-center text-[rgba(89,156,233,1)] text-sm px-2 hover:bg-[#7ca5d423] font-bold w-fit rounded-xl">
+                                <span class="material-symbols-outlined">
+                                    globe_asia
+                                </span>Everyone can reply</p>
+                        </div>
+                        <div class="flex justify-between py-3">
+                            <div class="">
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    image
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    gif_box
+                                </span>
+                                <span class="w-10 material-symbols-outlined p-2 cursor-pointer rounded-full -scale-x-100 hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    hide_source
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    ballot
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    sentiment_satisfied
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    calendar_clock
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    location_on
+                                </span>
+                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                    flag_2
+                                </span>
+                            </div>
+                            <button
+                                class="px-5 py-1 font-semibold bg-white rounded-full text-[rgba(89,156,233,1)]">Post</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex justify-center items-center p-3 border-b-[0.2px] border-[rgb(101,105,108)] text-[rgba(89,156,233,1)] cursor-pointer hover:bg-[#1212127f]">Show 112 Posts</div>
+            </div>
+            <div class="second w-[40%] hidden lg:block p-5 space-y-4 ">
+                <div class="search relative ">
+                    <span
+                        class="material-symbols-outlined text-[24px] text-[rgb(101,105,108)] absolute left-2 top-2">search</span>
+                    <input
+                        class="xl:w-[85%] w-[95%] h-10 pl-[40px] rounded-full border-[0.2px] border-[rgb(101,105,108)] my-auto text-white placeholder:text-[20px] placeholder:text-[rgb(101,105,108)] outline-[rgba(90,156,233,1)] bg-black"
+                        type="text" placeholder="Search">
+                </div>
+                <div
+                    class="subs xl:w-[85%] w-[95%]  border-[0.2px] border-[rgb(101,105,108)] rounded-xl p-4 gap-3 flex flex-col justify-start ">
+                    <h3 class="font-bold text-[20px]">Subscribe to Premium
+                    </h3>
+                    <p class="text-[17px]">Get rid of ads, see your analytics, boost your replies and unlock 20+
+                        features.</p>
+                    <a class=" px-4 py-1 mt-1 bg-[rgba(89,156,233,1)] w-max rounded-full font-semibold"
+                        href="/">Subscribe</a>
+                </div>
+                <div
+                    class="tnews subs xl:w-[85%] w-[95%] border-[0.2px] border-[rgb(101,105,108)] rounded-xl p-4 gap-8 flex flex-col justify-start">
+                    <div class="flex justify-between mb-2">
+                        <h1 class="text-xl font-bold">Today's News</h1>
+                        <span class="material-symbols-outlined cursor-pointer text-[24px]">close</span></a>
+
+                    </div>
+                    <div class="space-y-1 cursor-pointer">
+                        <h4 class="text-sm font-bold">Calf Tries to Nurse from Dairy Truck's Cow Image</h4>
+                        <div class="flex gap-5 items-center">
+                            <div class="flex  relative">
+                                <img class="w-5  rounded-full  z-20" src="Assets/Images/person.png" alt="">
+                                <img class="w-5 rounded-full absolute left-2 z-10" src="Assets/Images/person.png"
+                                    alt="">
+                                <img class="w-5 rounded-full absolute left-4" src="Assets/Images/person.png" alt="">
+
+                            </div>
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                3 hours ago · Entertainment · 6,579 posts</p>
+                        </div>
+                    </div>
+
+
+                    <div class="space-y-1">
+                        <h4 class="text-sm font-bold">OpenAI Launches GPT-6 Astra as Most Capable Model Yet</h4>
+                        <div class="flex gap-5">
+                            <div class="flex gap-2 relative">
+                                <img class="w-5 rounded-full z-20" src="Assets/Images/person.png" alt="">
+                                <img class="w-5 rounded-full absolute left-2 z-10" src="Assets/Images/person.png"
+                                    alt="">
+                                <img class="w-5 rounded-full absolute left-4" src="Assets/Images/person.png" alt="">
+
+                            </div>
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                1 day ago · News · 109.8K posts</p>
+                        </div>
+                    </div>
+
+
+                    <div class="space-y-1">
+                        <h4 class="text-sm font-bold">NHTSA Audits Tesla Cybercabs After Austin Launch</h4>
+                        <div class="flex gap-5">
+                            <div class="flex gap-2 relative">
+                                <img class="w-5 rounded-full z-20" src="Assets/Images/person.png" alt="">
+                                <img class="w-5 rounded-full absolute left-2 z-10" src="Assets/Images/person.png"
+                                    alt="">
+                                <img class="w-5 rounded-full absolute left-4" src="Assets/Images/person.png" alt="">
+
+                            </div>
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                Trending now · News · 335 posts</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="tnews subs xl:w-[85%] w-[95%]  border-[0.2px] border-[rgb(101,105,108)] rounded-xl  gap-2 flex flex-col justify-start">
+                    <div class="">
+                        <h1 class="text-xl font-bold p-4">What's Happening</h1>
+
+                    </div>
+
+                    <div class="flex justify-between items-center px-4 py-1 cursor-pointer hover:bg-[#1212127f]">
+
+                        <div class="space-y-1">
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                Entertainment · Trending Now</p>
+                            <h4 class="text-sm font-bold">#AjithKumar</h4>
+                        </div>
+                        <span
+                            class="material-symbols-outlined hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                            more_horiz
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center px-4 py-1 cursor-pointer hover:bg-[#1212127f]">
+
+                        <div class="space-y-1">
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                Entertainment · Trending Now</p>
+                            <h4 class="text-sm font-bold">#MirzapurTheMovie</h4>
+                        </div>
+                        <span
+                            class="material-symbols-outlined hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                            more_horiz
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center px-4 py-1 cursor-pointer hover:bg-[#1212127f]">
+
+                        <div class="space-y-1">
+                            <p class="text-[13px] text-[rgb(101,105,108)] ">
+                                Only on X · Trending</p>
+                            <h4 class="text-sm font-bold">#GeminiConcertD1</h4>
+                        </div>
+                        <span
+                            class="material-symbols-outlined hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                            more_horiz
+                        </span>
+                    </div>
+
+                    <a class="p-4 w-full rounded-b-xl text-[rgba(89,156,233,1)] hover:bg-[#1212127f]" href="/">See
+                        More</a>
+
+                </div>
+
+
+
+                <div
+                    class="tnews subs w-[85%]  border-[0.2px] border-[rgb(101,105,108)] rounded-xl  gap-3 flex flex-col justify-start">
+                    <div class=" ">
+                        <h1 class="text-xl px-4 pt-4 font-bold">Who to Follow</h1>
+                    </div>
+
+                    <div
+                        class=" flex justify-between items-center w-[100%] px-3 py-2 hover:bg-[#1212127f] cursor-pointer">
+                        <div class="flex gap-2">
+                            <div class="image">
+                                <img class=" w-12 rounded-full" src="./Assets/Images/person.png" alt="">
+                            </div>
+                            <div class="">
+                                <h4>Name</h4>
+                                <p class="text-[rgb(101,105,108)] ">@UserName</p>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <button class="bg-white text-[#358df1] rounded-full font-bold px-3 py-1">Follow</button>
+                        </div>
+
+                    </div>
+                    <div
+                        class=" flex justify-between items-center w-[100%] px-3 py-2 hover:bg-[#1212127f] cursor-pointer ">
+                        <div class="flex gap-2">
+                            <div class="image">
+                                <img class=" w-12 rounded-full" src="./Assets/Images/person.png" alt="">
+                            </div>
+                            <div class="">
+                                <h4>Name</h4>
+                                <p class="text-[rgb(101,105,108)] ">@UserName</p>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <button class="bg-white text-[#358df1] rounded-full font-bold px-3 py-1">Follow</button>
+                        </div>
+
+                    </div>
+                    <div
+                        class=" flex justify-between items-center w-[100%] px-3 py-2 hover:bg-[#1212127f] cursor-pointer">
+                        <div class="flex gap-2">
+                            <div class="image">
+                                <img class=" w-12 rounded-full" src="./Assets/Images/person.png" alt="">
+                            </div>
+                            <div class="">
+                                <h4>Name</h4>
+                                <p class="text-[rgb(101,105,108)] ">@UserName</p>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <button class="bg-white text-[#358df1] rounded-full font-bold px-3 py-1">Follow</button>
+                        </div>
+
+                    </div>
+
+
+                    <a class="p-4 w-full rounded-b-xl text-[rgba(89,156,233,1)] hover:bg-[#1212127f]" href="/">See
+                        More</a>
+
+
+
+
+
+
+                </div>
+                <div class="flex flex-wrap w-[80%] p-4 text-[13px] gap-2 text-[rgba(89,156,233,1)]">
+                    <a class="hover:underline" href="/">Terms</a>
+                    ·
+                    <a class="hover:underline" href="/">Privacy</a>
+                    ·
+                    <a class="hover:underline" href="/">Coockies</a>
+                    ·
+                    <a class="hover:underline" href="/">
+                        Accessibility
+                    </a>
+                    ·
+                    <a class="hover:underline" href="/">Ads Info</a>
+                    ·
+                    <a class="hover:underline" href="/">More...</a>
+
+                    <p class="inline-block"> © 2026 X Corp.</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
