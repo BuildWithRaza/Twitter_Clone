@@ -11,7 +11,8 @@
 
 <body class="bg-black text-white ">
     <main class="2xl:container 2xl:mx-auto flex md:mx-auto">
-        <section class="md:w-[25%] w-[100px] flex flex-col justify-between h-screen pb-2 overflow-y-hidden">
+        <section
+            class="md:w-[25%] w-[100px] flex flex-col justify-between h-screen pb-2 overflow-y-hidden sticky top-0">
             <div class=" flex flex-col gap-2 py-5 sticky ">
                 <div class="logo flex justify-center  md:justify-end">
                     <div class="flex justify-center md:justify-normal w-[100px]  xl:w-[75%] p-3">
@@ -137,10 +138,11 @@
 
         <section class="flex w-[75%] ">
             <div class="first w-[95%]  md:w-[85%] lg:w-[60%]  border-x-[.2px] border-[rgb(101,105,108)] ">
-                <nav class="border-b-[.2px] border-[rgb(101,105,108)] w-[100%] h-[60px] flex items-center">
+                <nav
+                    class="border-b-[.2px] border-[rgb(101,105,108)] w-[100%] h-[60px] flex items-center sticky top-0 ">
                     <ul class="flex w-[90%] h-full items-center">
                         <li class="w-1/2 h-full  hover:bg-[#181818] relative">
-                            <div class="absolute w-9 h-1 bg-[#599ce9] bottom-0 right-[45%]"></div>
+                            <div class="absolute w-9 h-1 rounded-full bg-[#599ce9] bottom-0 right-[45%]"></div>
                             <a class="text-center flex justify-center items-center h-full font-semibold" href="/">For
                                 you</a>
                         </li>
@@ -166,32 +168,41 @@
                                 class="flex items-center text-[rgba(89,156,233,1)] text-sm px-2 hover:bg-[#7ca5d423] font-bold w-fit rounded-xl">
                                 <span class="material-symbols-outlined">
                                     globe_asia
-                                </span>Everyone can reply</p>
+                                </span>Everyone can reply
+                            </p>
                         </div>
                         <div class="flex justify-between py-3">
                             <div class="">
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     image
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     gif_box
                                 </span>
-                                <span class="w-10 material-symbols-outlined p-2 cursor-pointer rounded-full -scale-x-100 hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="w-10 material-symbols-outlined p-2 cursor-pointer rounded-full -scale-x-100 hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     hide_source
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     ballot
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     sentiment_satisfied
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     calendar_clock
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     location_on
                                 </span>
-                                <span class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
+                                <span
+                                    class="material-symbols-outlined p-2 cursor-pointer rounded-full hover:bg-[#181818] hover:text-white text-[#7f838b]">
                                     flag_2
                                 </span>
                             </div>
@@ -199,11 +210,440 @@
                                 class="px-5 py-1 font-semibold bg-white rounded-full text-[rgba(89,156,233,1)]">Post</button>
                         </div>
                     </div>
-                    
+
                 </div>
-                <div class="flex justify-center items-center p-3 border-b-[0.2px] border-[rgb(101,105,108)] text-[rgba(89,156,233,1)] cursor-pointer hover:bg-[#1212127f]">Show 112 Posts</div>
+                <div
+                    class="flex justify-center items-center p-3 border-b-[0.2px] border-[rgb(101,105,108)] text-[rgba(89,156,233,1)] cursor-pointer hover:bg-[#1212127f]">
+                    Show 112 Posts</div>
+                <div class="posts p-1">
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature3.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature2.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature4.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature2.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature4.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature2.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="post border-b-[0.2px] border-[rgb(101,105,108)] w-full flex gap-2">
+                        <div class="pimage p-2">
+                            <img class="rounded-full w-12" src="Assets/Images/person.png" alt="">
+                        </div>
+                        <div class="userpost w-full pr-2">
+                            <div class="posttop flex justify-between items-center   w-full">
+                                <div>
+                                    <span class="font-semibold">UserName</span>
+                                    <span class="text-[rgb(101,105,108)]">@userId · 17h</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span
+                                        class="w-8 flex justify-center items-center material-symbols-outlined text-[20px]  cursor-pointer rounded-full -scale-x-100 hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        hide_source
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#7f838b] hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] rounded-full">
+                                        more_horiz
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="posttext mb-3">
+                                <p>Sudden change in weather in eastern Rajasthan, youth swept away with bike in Sawai
+                                    Madhopur, narrowly escapes with his life....</p>
+                            </div>
+                            <div class="postvdorimg w-full ">
+                                <img class="object-contain  h-auto rounded-lg" src="Assets/Images/nature2.jpg" alt="">
+                            </div>
+                            <div class="postbelowbuttons flex justify-between items-center py-2">
+                                <div class="flex justify-center items-center cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423] rounded-full  text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>45</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgb(0,186,124)] px-2 py-1 hover:bg-[rgba(0,186,124,0.1)] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        repeat
+                                    </span>317</div>
+                                <div class="flex justify-center items-center rounded-full cursor-pointer hover:text-[#dd417f] px-2 py-1 hover:bg-[#1d0e14] text-[#7f838b] "><span
+                                        class="material-symbols-outlined">
+                                        favorite
+                                    </span>3.1K</div>
+                                <div
+                                    class="flex justify-center items-center rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] px-2 py-1 hover:bg-[#7ca5d423]  text-[#7f838b] ">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart_4_bars
+                                    </span>1.2M</div>
+                                <div class="flex justify-center items-center  text-[#7f838b] "><span
+                                        class="material-symbols-outlined rounded-full cursor-pointer  hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        bookmark
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined rounded-full cursor-pointer hover:text-[rgba(89,156,233,1)] p-2 hover:bg-[#7ca5d423] ">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="second w-[40%] hidden lg:block p-5 space-y-4 ">
+
+
+            <div class="second w-[40%] hidden lg:block p-5 h-fit space-y-4 sticky -top-[85%]">
                 <div class="search relative ">
                     <span
                         class="material-symbols-outlined text-[24px] text-[rgb(101,105,108)] absolute left-2 top-2">search</span>
